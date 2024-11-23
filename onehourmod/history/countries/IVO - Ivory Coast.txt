@@ -67,6 +67,11 @@ set_popularities = {
 	neutrality = 50
 }
 
+army_experience = 100
+air_experience = 100
+navy_experience = 100
+set_research_slots = 4
+
 create_country_leader = {
 	name = "John Paul Jones"
 	desc = ""
