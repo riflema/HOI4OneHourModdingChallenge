@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_Portrait_IVO_Johnny_Depp
+		texturefile = "gfx/leaders/IVO/IVO_Johnny_Depp.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_IVO_Arkhipov
+		texturefile = "gfx/leaders/IVO/Portrait_IVO_Arkhipov.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_IVO_JPJ
+		texturefile = "gfx/leaders/IVO/Portrait_IVO_JPJ.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_IVO_Donitz
+		texturefile = "gfx/leaders/IVO/Portrait_Germany_Karl_Donitz.dds"
+	}
+}

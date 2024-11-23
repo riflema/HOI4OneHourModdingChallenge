@@ -1,0 +1,68 @@
+characters = {
+	IVO_Johnny_Depp = {
+		name = IVO_Johnny_Depp
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_IVO_Johnny_Depp
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {
+				spirit_of_genghis
+				anarchist_zeal
+				cornered_fox
+			}
+			expire = "1953.3.1"
+			id=-1
+		}
+	}
+	IVO_Arkhipov = {
+		name = IVO_Arkhipov
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_IVO_Arkhipov
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			traits = {
+				anti_stalinist_marxist
+			}
+			expire = "1953.3.1"
+			id=-1
+		}
+	}
+	IVO_JPJ = {
+		name = IVO_JPJ
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_IVO_JPJ
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {
+				nationalist_symbol
+			}
+			expire = "1953.3.1"
+			id=-1
+		}
+	}
+	IVO_Donitz = {
+		name = IVO_Donitz
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_IVO_Donitz
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {
+				anti_democrat
+			}
+			expire = "1953.3.1"
+			id=-1
+		}
+	}
+}
