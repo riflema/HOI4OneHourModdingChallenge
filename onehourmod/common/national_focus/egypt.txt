@@ -1,0 +1,485 @@
+focus_tree = {
+	id = egypt_focus
+	country = {
+			factor = 0
+			modifier = {
+				add = 10
+				tag = EGY
+			}
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 1500 }
+	focus = {
+		id = EGY_al-Bidens_Plans
+		icon = GFX_focus_TUR_turanist_ambition
+		x = 15
+		y = 0
+		cost = 5
+		prerequisite = {}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_political_power = 50
+			army_experience = 25
+			air_experience = 25
+			navy_experience = 25
+		}
+	}
+	focus = {
+		id = EGY_Egyptian_Rescue_Plan
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 18
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = EGY_al-Bidens_Plans
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = Egyptian_Rescue_Plan
+
+		}
+	}
+	focus = {
+		id = EGY_CHIPS_Act
+		icon = GFX_focus_GER_wirtschaftswunder
+		x = 16
+		y = 2
+		cost = 15
+		prerequisite = {
+			focus = EGY_Egyptian_Rescue_Plan
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_research_slot = 1
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+   					level = 2
+    				instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+   					level = 2
+    				instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = EGY_Green_New_Deal
+		icon = GFX_focus_GER_prioritize_the_four_year_plan
+		x = 20
+		y = 2
+		cost = 15
+		prerequisite = {
+			focus = EGY_Egyptian_Rescue_Plan
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex 
+   					level = 2
+    				instant_build = yes
+				}
+			}
+			random_core_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex 
+   					level = 2
+    				instant_build = yes
+				}
+			}
+
+		}
+	}
+	focus = {
+		id = EGY_Joeronavirus
+		icon = GFX_focus_ger_great_red_menace
+		x = 12
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = EGY_al-Bidens_Plans
+		}
+		
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_country = {
+				add_ideas = Joeronavirus
+			}
+
+		}
+	}
+	focus = {
+		id = EGY_Stimulus_Checks
+		icon = GFX_focus_generic_currency_reforms
+		x = 14
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = EGY_Joeronavirus
+		}
+		
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+			add_ideas = Stimulus_Checks
+
+		}
+	}
+	focus = {
+		id = EGY_Biden_Youth
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 14
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = EGY_Stimulus_Checks
+		}
+		
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = Biden_Youth
+
+		}
+	}
+	focus = {
+		id = EGY_Remove_the_Bad_Joe
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 14
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = EGY_Biden_Youth
+		}
+		
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.2
+			remove_ideas = EGY_Joe_Rogan_Opposition
+			kill_ideology_leader = fascism
+			set_party_name = {
+    			ideology = fascism
+    			long_name = EGY_MAGA
+   				name = EGY_MAGA
+			}
+
+		}
+	}
+	focus = {
+		id = EGY_Give_the_Troops_Meth
+		icon = GFX_focus_SOV_mobilization_plan
+		x = 14
+		y = 5
+		cost = 5
+		prerequisite = {
+			focus = EGY_Remove_the_Bad_Joe
+		}
+		
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = EGY_Methed_Up_Army
+
+		}
+	}
+	focus = {
+		id = EGY_Help_Libya_Mask_Up
+		icon = GFX_goal_generic_secret_weapon
+		x = 10
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = EGY_Joeronavirus
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = LBA
+			}
+			LBA = {
+			 	every_core_state = {
+			 		add_core_of = EGY
+			 	}
+			}
+		}
+	}
+	focus = {
+		id = EGY_Help_North_Africa_Mask_Up
+		icon = GFX_goal_generic_secret_weapon
+		x = 10
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = EGY_Help_Libya_Mask_Up
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = TUN
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = ALG
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = MOR
+			}
+			TUN = {
+			 	every_core_state = {
+			 		add_core_of = EGY
+			 	}
+			}
+			ALG = {
+			 	every_core_state = {
+			 		add_core_of = EGY
+			 	}
+			}
+			MOR = {
+			 	every_core_state = {
+			 		add_core_of = EGY
+			 	}
+			}
+		}
+	}
+	focus = {
+		id = EGY_Help_Levant_Mask_Up
+		icon = GFX_goal_generic_secret_weapon
+		x = 12
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = EGY_Joeronavirus
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = ISR
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = PAL
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = JOR
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = SYR
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = LEB
+			}
+			ISR = {
+			 	every_core_state = {
+			 		add_core_of = EGY
+			 	}
+			}
+			PAL = {
+			 	every_core_state = {
+			 		add_core_of = EGY
+			 	}
+			}
+			JOR = {
+			 	every_core_state = {
+			 		add_core_of = EGY
+			 	}
+			}
+			SYR = {
+			 	every_core_state = {
+			 		add_core_of = EGY
+			 	}
+			}
+			LEB = {
+			 	every_core_state = {
+			 		add_core_of = EGY
+			 	}
+			}
+		}
+	}
+	focus = {
+		id = EGY_Help_Arabia_Mask_Up
+		icon = GFX_goal_generic_secret_weapon
+		x = 12
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = EGY_Help_Levant_Mask_Up
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = SAU
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = OMA
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = YEM
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = QAT
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = KUW
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = IRQ
+			}
+			SAU = {
+			 	every_core_state = {
+			 		add_core_of = EGY
+			 	}
+			}
+			OMA = {
+			 	every_core_state = {
+			 		add_core_of = EGY
+			 	}
+			}
+			YEM = {
+			 	every_core_state = {
+			 		add_core_of = EGY
+			 	}
+			}
+			QAT = {
+			 	every_core_state = {
+			 		add_core_of = EGY
+			 	}
+			}
+			KUW = {
+			 	every_core_state = {
+			 		add_core_of = EGY
+			 	}
+			}
+			IRQ = {
+			 	every_core_state = {
+			 		add_core_of = EGY
+			 	}
+			}
+
+		}
+	}
+	focus = {
+		id = EGY_Declare_the_Joe_Caliphate
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+		x = 12
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = EGY_Help_Arabia_Mask_Up
+		}
+		prerequisite = {
+			focus = EGY_Help_North_Africa_Mask_Up
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			set_cosmetic_tag = EGY_Joe_Caliphate
+			add_stability = 0.2
+			add_political_power = 100
+			remove_ideas = Joeronavirus
+		}
+	}
+	focus = {
+		id = EGY_Help_Major_Powers_Mask_Up
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		x = 12
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = EGY_Declare_the_Joe_Caliphate
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = ENG
+			}
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = FRA
+			}
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = USA
+			}
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = GER
+			}
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = SOV
+			}
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = JAP
+			}
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = ITA
+			}
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = JAP
+			}
+
+		}
+	}
+}

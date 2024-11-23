@@ -1,0 +1,68 @@
+characters = {
+	EGY_Joseph_al-Biden = {
+		name = EGY_Joseph_al-Biden
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_EGY_biden
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {
+				white_liberal
+				veteran_communist
+			}
+			expire = "1953.3.1"
+			id=-1
+		}
+	}
+	EGY_Bernie_Sanders = {
+		name = EGY_Bernie_Sanders
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_EGY_bernie
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = {
+				militant_socialist
+			}
+			expire = "1953.3.1"
+			id=-1
+		}
+	}
+	EGY_Roosevelt = {
+		name = EGY_Roosevelt
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_EGY_roosevelt
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {
+				white_liberal
+			}
+			expire = "1953.3.1"
+			id=-1
+		}
+	}
+	EGY_Joe_Rogan = {
+		name = EGY_Joe_Rogan
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_EGY_hitler
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {
+				warmonger
+				anti_democrat
+			}
+			expire = "1953.3.1"
+			id=-1
+		}
+	}
+}

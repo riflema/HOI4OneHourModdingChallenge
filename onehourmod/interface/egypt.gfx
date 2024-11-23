@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_Portrait_EGY_biden
+		texturefile = "gfx/leaders/EGY/Portrait_EGY_biden.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_EGY_bernie
+		texturefile = "gfx/leaders/EGY/Portrait_EGY_bernie.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_EGY_hitler
+		texturefile = "gfx/leaders/EGY/Portrait_Germany_Adolf_Hitler.dds"
+	}
+	spriteType = {
+		name = GFX_Portrait_EGY_roosevelt
+		texturefile = "gfx/leaders/EGY/Portrait_USA_Franklin_Roosevelt.dds"
+	}
+}
