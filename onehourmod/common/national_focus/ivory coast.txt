@@ -1,5 +1,5 @@
 focus_tree = {
-	id = ivory_coasta_focus
+	id = ivory_coast_focus
 	country = {
 			factor = 0
 			modifier = {
