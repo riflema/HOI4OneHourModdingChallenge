@@ -1,0 +1,391 @@
+focus_tree = {
+	id = ivory_coasta_focus
+	country = {
+			factor = 0
+			modifier = {
+				add = 10
+				tag = IVO
+			}
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 1500 }
+	focus = {
+		id = IVO_Curse_of_Johnny
+		icon = GFX_focus_generic_annex_country_2
+		x = 10
+		y = 0
+		cost = 10
+		prerequisite = {}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			navy_experience = 100
+			add_ideas = Johnny_Curse
+		}
+	}
+	focus = {
+		id = IVO_Prepare_the_Fleet
+		icon = GFX_focus_SMB_blue_water_fleet
+		x = 12
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = IVO_Curse_of_Johnny
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			779 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			navy_experience = 50
+			add_ideas = IVO_Naval_Advancement
+		}
+	}
+	focus = {
+		id = IVO_Develop_Our_Ships
+		icon = GFX_goal_generic_navy_battleship
+		x = 11
+		y = 2
+		cost = 20
+		prerequisite = {
+			focus = IVO_Prepare_the_Fleet
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			navy_experience = 50
+			add_research_slot = 1
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = dockyard
+    				level = 2
+    				instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = dockyard
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = IVO_Hire_Pirate_Crews
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
+		x = 13
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = IVO_Prepare_the_Fleet
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			navy_experience = 100
+			add_ideas = Influx_of_Pirate_Crews
+			add_ideas = extensive_conscription
+		}
+	}
+	focus = {
+		id = IVO_Ivorian_Pirate_Cove
+		icon = GFX_focus_hol_prepare_the_inundation_lines
+		x = 12
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = IVO_Hire_Pirate_Crews
+		}
+		prerequisite = {
+			focus = IVO_Develop_Our_Ships
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_ideas = Pirate_Economy
+		}
+	}
+	focus = {
+		id = IVO_Dead_Mans_Prophecy
+		icon = GFX_focus_generic_full_social_mobilization
+		x = 8
+		y = 1
+		cost = 10
+		prerequisite = {
+			focus = IVO_Curse_of_Johnny
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support = 0.1
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = IVO_At_Africas_End
+		icon = GFX_focus_generic_africa_liberation
+		x = 7
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = IVO_Dead_Mans_Prophecy
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			LIB = {
+				every_core_state = {
+					add_core_of = IVO
+				}
+			}
+			SIE = {
+				every_core_state = {
+					add_core_of = IVO
+				}
+			}
+			GNA = {
+				every_core_state = {
+					add_core_of = IVO
+				}
+			}
+			SEN = {
+				every_core_state = {
+					add_core_of = IVO
+				}
+			}
+			GNB = {
+				every_core_state = {
+					add_core_of = IVO
+				}
+			}
+			GAM = {
+				every_core_state = {
+					add_core_of = IVO
+				}
+			}
+			create_wargoal = {
+            	target = LIB
+           		type = annex_everything
+        	}
+        	create_wargoal = {
+            	target = SIE
+           		type = annex_everything
+        	}
+        	create_wargoal = {
+            	target = GNA
+           		type = annex_everything
+        	}
+        	create_wargoal = {
+            	target = SEN
+           		type = annex_everything
+        	}
+        	create_wargoal = {
+            	target = GNB
+           		type = annex_everything
+        	}
+        	create_wargoal = {
+            	target = GAM
+           		type = annex_everything
+        	}
+
+		}
+	}
+	focus = {
+		id = IVO_On_Familiar_Seas
+		icon = GFX_focus_SWE_coastal_support
+		x = 7
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = IVO_At_Africas_End
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			GHA = {
+				every_core_state = {
+					add_core_of = IVO
+				}
+			}
+			TOG = {
+				every_core_state = {
+					add_core_of = IVO
+				}
+			}
+			DAH = {
+				every_core_state = {
+					add_core_of = IVO
+				}
+			}
+			NGA = {
+				every_core_state = {
+					add_core_of = IVO
+				}
+			}
+			BIA = {
+				every_core_state = {
+					add_core_of = IVO
+				}
+			}
+			CMR = {
+				every_core_state = {
+					add_core_of = IVO
+				}
+			}
+			create_wargoal = {
+            	target = GHA
+           		type = annex_everything
+        	}
+        	create_wargoal = {
+            	target = TOG
+           		type = annex_everything
+        	}
+        	create_wargoal = {
+            	target = DAH
+           		type = annex_everything
+        	}
+        	create_wargoal = {
+            	target = NGA
+           		type = annex_everything
+        	}
+        	create_wargoal = {
+            	target = BIA
+           		type = annex_everything
+        	}
+        	create_wargoal = {
+            	target = CMR
+           		type = annex_everything
+        	}
+
+		}
+	}
+	focus = {
+		id = IVO_Dead_British_Tell_No_Tales
+		icon = GFX_focus_SWE_neither_death_nor_dishonor
+		x = 7
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = IVO_On_Familiar_Seas
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			ENG = {
+				every_core_state = {
+					add_core_of = IVO
+				}
+			}
+			create_wargoal = {
+            	target = ENG
+           		type = annex_everything
+        	}
+
+		}
+	}
+	focus = {
+		id = IVO_Global_Piracy
+		icon = GFX_focus_generic_subjugation
+		x = 8
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = IVO_Dead_British_Tell_No_Tales
+		}
+		prerequisite = {
+			focus = IVO_Tenacious_Pirates
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_political_power = 100
+			set_cosmetic_tag = IVO_Pirate_Union
+			add_ideas = IVO_Spread_Global_Piracy
+		}
+	}
+	focus = {
+		id = IVO_Pirates_of_the_Gulf
+		icon = GFX_goal_generic_secret_weapon
+		x = 9
+		y = 2
+		cost = 15
+		prerequisite = {
+			focus = IVO_Dead_Mans_Prophecy
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = Pirates_of_Gulf
+
+		}
+	}
+	focus = {
+		id = IVO_The_Curse_Is_Lifted
+		icon = GFX_focus_generic_annex_country
+		x = 9
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = IVO_Pirates_of_the_Gulf
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_political_power = 100
+			remove_ideas = Johnny_Curse
+
+		}
+	}
+	focus = {
+		id = IVO_Tenacious_Pirates
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 9
+		y = 4
+		cost = 15
+		prerequisite = {
+			focus = IVO_The_Curse_Is_Lifted
+		}
+		
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			navy_experience = 100
+			add_ideas = Tenacious_Pirates
+
+		}
+	}
+}

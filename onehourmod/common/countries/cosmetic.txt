@@ -1508,6 +1508,11 @@ AUS_european_union_leader = {
 }
 
 EGY_Joe_Caliphate = {
-	color = rgb { 14 58 24 }
-	color_ui = rgb { 14 58 24 }
+	color = rgb { 0 104 12 }
+	color_ui = rgb { 0 104 12 }
+}
+
+IVO_Pirate_Union = {
+	color = rgb { 0 20 56 }
+	color_ui = rgb { 0 20 56 }
 }
