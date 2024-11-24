@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	# leaders we need to override in DLC go in this file
+
+	spriteType = {
+		name = "GFX_portrait_MAD_Macron"
+		texturefile = "gfx/leaders/MAD/Portrait_MAD_Macron.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_UGA_Donald"
+		texturefile = "gfx/leaders/UGA/Portrait_UGA_Donald.dds"
+	}

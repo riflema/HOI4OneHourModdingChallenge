@@ -1,0 +1,35 @@
+﻿l_english:
+ UGA_trump:0 "Trump's rule"
+ UGA_trump_economy:0 "The Trump Economy"
+ UGA_open_camps:0 "Open the Labor Camps"
+ UGA_trump_indoctornation:0 "Pro-Trump Indoctornation"
+ UGA_war_economy:0 "Trump's War Economy"
+ UGA_stir_rhetoric:0 "Stir up anti-Swahili Rhetoric"
+ UGA_invade_the_coast:0 "Claim the Coast" 
+ UGA_core_coast:0 "Reorganize the Costal Clay"
+ UGA_tanzanian_factories:0 "Open Tanzanian Factories"
+ UGA_port_expansion:0 "Build the Port of Dar es Salaam"
+ UGA_crush_DRC:0 "Crush the Westward Threat"
+ UGA_organize_congo:0 "Reign in the Congolese"
+ UGA_god_emperor:0 "Declare Trump God Emperor"
+ UGA_establish_forces:0 "Establish the Armed Forces"
+ UGA_burundi_invasion:0 "Invade Burundi"
+ UGA_rawanda_invasion:0 "Invade Rwanda"
+ UGA_burundi_core:0 "Assert Control Over Burundi"
+ UGA_rawanda_core:0 "Force the Compliance of the Rwandans"
+ UGA_develop_burundi:0 "Develop Industries in Burundi"
+ UGA_develop_rawanda:0 "Create Jobs in Rwanda"
+
+
+ ####### ideas
+
+ UGA_trump_economy:0 "The Trump Economy"
+ UGA_trump_trust:0 "Public Support for Trump"
+ UGA_god_empire:0 "God Emperor Trump"
+
+######### Country
+
+UGA_fascism_ADJ:0 "Trumplandian"
+UGA_fascism_DEF:0 "The Trumplandian Empire"
+UGA_fascism:0 "Trumplandia"
+

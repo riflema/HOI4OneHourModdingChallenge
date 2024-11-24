@@ -1,0 +1,31 @@
+﻿l_english:
+ MAD_malagasy_king:0 "King Macron I"
+ MAD_royal_factories:0 "Bolster the Royal Industries"
+ MAD_royal_army:0 "Establish the Royal Army"
+ MAD_mainland_invasion:0 "Invade the Mainland"
+ MAD_nationalism:0 "Royal Perogative"
+ MAD_royal_navy:0 "Bolster the Royal Navy"
+ MAD_sea_to_sea:0 "Sea to Shining Sea"
+ MAD_cores_africa:0 "Incorporate the New Lands"
+ MAD_army_prestige:0 "Pride for the Armed Forces"
+ MAD_malagasy_soldiers:0 "Fight for What's Right"
+ MAD_strike_colonials:0 "Crush the Colonizers"
+
+ ####### ideas
+
+ MAD_king_malagasy:0 "King Macron I"
+ MAD_army_prestige:0 "Proud Armed Forces"
+ MAD_work_for_nation:0 "Work for the King"
+ MAD_blessed_navy:0 "Grand Navy Initiative"
+ MAD_big_army:0 "Fight for What's Right"
+ MAD_kill_colonist:0 "United Against Colonizers"
+
+######### Country
+
+MAD_neutrality_ADJ:0 "Macronese"
+MAD_neutrality_DEF:0 "The Macron Dynasty"
+MAD_neutrality:0 "Macron Dynasty"
+
+######### cities
+VICTORY_POINTS_TOOLTIP:0 "§G$NAME$§! victory points = §Y$POINTS$§!"
+VICTORY_POINTS_5128:1 "Macron Palace"

@@ -1,0 +1,407 @@
+focus_tree = {
+	id = Uganda_Focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UGA
+		}
+	}
+
+	continuous_focus_position = { x = 50 y = 2000 }
+	default = no
+	focus = {
+		id = UGA_trump
+		icon = GFX_goal_support_fascism
+		cost = 5.00
+		x = 5
+		y = 1
+			completion_reward = {
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = UGA_establish_forces
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		x = 14
+		y = 1
+			completion_reward = {
+					army_experience = 25
+					navy_experience = 25
+					air_experience = 25
+				}
+
+	}
+	focus = {
+		id = UGA_trump_indoctornation
+		icon = GFX_goal_generic_radar
+		cost = 10.00
+		prerequisite = {
+			focus = UGA_trump
+		}
+		x = 2
+		y = 2
+			completion_reward = {
+					add_ideas = UGA_trump_trust
+				}
+
+	}
+	focus = {
+		id = UGA_war_economy
+		icon = GFX_goal_generic_construct_military
+		cost = 10.00
+		prerequisite = {
+			focus = UGA_trump_indoctornation
+		}
+		x = 2
+		y = 3
+			completion_reward = {
+					army_experience = 25
+					add_ideas = extensive_conscription
+					add_ideas = war_economy
+				}
+
+	}
+	focus = {
+		id = UGA_stir_rhetoric
+		icon = GFX_goal_demand_sudetenland
+		cost = 5.00
+		prerequisite = {
+			focus = UGA_trump
+		}
+		x = 5
+		y = 3
+			completion_reward = {
+					add_war_support = 0.1
+					add_popularity = {
+							ideology = fascism
+							popularity = 0.2
+						}
+				}
+
+	}
+	focus = {
+		id = UGA_invade_the_coast
+		icon = GFX_goal_generic_territory_or_war
+		cost = 5.00
+		prerequisite = {
+			focus = UGA_stir_rhetoric
+		}
+		x = 5
+		y = 4
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = KEN
+							expire = 0
+						}
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = TZN
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = UGA_core_coast
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = UGA_invade_the_coast
+		}
+		x = 5
+		y = 5
+			completion_reward = {
+					546 = {
+							add_core_of = UGA
+						}
+					905 = {
+							add_core_of = UGA
+						}
+					904 = {
+							add_core_of = UGA
+						}
+					547 = {
+							add_core_of = UGA
+						}
+					903 = {
+							add_core_of = UGA
+						}
+				}
+
+	}
+	focus = {
+		id = UGA_tanzanian_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = UGA_core_coast
+		}
+		x = 3
+		y = 6
+			completion_reward = {
+					546 = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = UGA_crush_DRC
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 5.00
+		prerequisite = {
+			focus = UGA_core_coast
+		}
+		x = 5
+		y = 7
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = KAT
+							expire = 0
+						}
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = COG
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = UGA_organize_congo
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = UGA_crush_DRC
+		}
+		x = 5
+		y = 8
+			completion_reward = {
+					295 = {
+							add_core_of = UGA
+						}
+					888 = {
+							add_core_of = UGA
+						}
+					889 = {
+							add_core_of = UGA
+						}
+					538 = {
+							add_core_of = UGA
+						}
+					718 = {
+							add_core_of = UGA
+						}
+					890 = {
+							add_core_of = UGA
+						}
+				}
+
+	}
+	focus = {
+		id = UGA_port_expansion
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = UGA_core_coast
+		}
+		x = 7
+		y = 6
+			completion_reward = {
+					905 = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = dockyard
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = UGA_trump_economy
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		prerequisite = {
+			focus = UGA_trump
+		}
+		x = 8
+		y = 2
+			completion_reward = {
+					add_ideas = UGA_trump_economy
+				}
+
+	}
+	focus = {
+		id = UGA_open_camps
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = UGA_trump_economy
+		}
+		x = 8
+		y = 3
+			completion_reward = {
+					random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = industrial_complex
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = UGA_burundi_invasion
+		icon = GFX_goal_demand_sudetenland
+		cost = 5.00
+		prerequisite = {
+			focus = UGA_establish_forces
+		}
+		x = 12
+		y = 2
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = BRD
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = UGA_burundi_core
+		icon = GFX_goal_generic_military_deal
+		cost = 5.00
+		prerequisite = {
+			focus = UGA_burundi_invasion
+		}
+		x = 12
+		y = 3
+			completion_reward = {
+					769 = {
+							add_core_of = UGA
+						}
+				}
+
+	}
+	focus = {
+		id = UGA_develop_burundi
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = UGA_burundi_core
+		}
+		x = 12
+		y = 4
+			completion_reward = {
+					769 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = UGA_rawanda_invasion
+		icon = GFX_goal_demand_sudetenland
+		cost = 5.00
+		prerequisite = {
+			focus = UGA_establish_forces
+		}
+		x = 16
+		y = 2
+			completion_reward = {
+					create_wargoal = {
+							type = puppet_wargoal_focus
+							target = RWA
+							expire = 0
+						}
+				}
+
+	}
+	focus = {
+		id = UGA_rawanda_core
+		icon = GFX_goal_generic_military_deal
+		cost = 5.00
+		prerequisite = {
+			focus = UGA_rawanda_invasion
+		}
+		x = 16
+		y = 3
+			completion_reward = {
+					768 = {
+							add_core_of = UGA
+						}
+				}
+
+	}
+	focus = {
+		id = UGA_develop_rawanda
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = UGA_rawanda_core
+		}
+		x = 16
+		y = 4
+			completion_reward = {
+					768 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = UGA_god_emperor
+		icon = GFX_goal_support_fascism
+		cost = 30.00
+		prerequisite = {
+			focus = UGA_war_economy
+		}
+		prerequisite = {
+			focus = UGA_open_camps
+		}
+		prerequisite = {
+			focus = UGA_organize_congo
+		}
+		x = 5
+		y = 9
+			completion_reward = {
+					add_ideas = UGA_god_empire
+				}
+
+	}
+}
