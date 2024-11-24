@@ -13,6 +13,9 @@ set_research_slots = 4
 
 create_faction = Macronimwealth
 add_to_faction = MAD
+set_rule = { can_create_factions = yes }
+set_rule = { can_puppet = yes }
+set_rule = { can_send_volunteers = yes }
 
 1939.1.1 = {
 	#generic focuses

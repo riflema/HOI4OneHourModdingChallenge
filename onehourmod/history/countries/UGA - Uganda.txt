@@ -6,6 +6,9 @@ set_technology = {
 }
 
 set_research_slots = 4
+set_rule = { can_create_factions = yes }
+set_rule = { can_puppet = yes }
+set_rule = { can_send_volunteers = yes }
 
 set_convoys = 0
 
