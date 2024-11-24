@@ -1,0 +1,68 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+		
+		"EGY"={
+			history = "EGY_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				EGY_Joe_Rogan_Opposition
+			}
+			focuses = {
+				EGY_Declare_the_Joe_Caliphate
+				EGY_Remove_the_Bad_Joe
+				EGY_Give_the_Troops_Meth
+			}
+		}
+		"IVO"={
+			history = "IVO_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+				IVO_Global_Piracy
+				IVO_Dead_British_Tell_No_Tales
+				IVO_Ivorian_Pirate_Cove
+			}
+		}
+		"MAD"={
+			history = "MAD_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+
+			}
+			focuses = {
+				MAD_strike_colonials
+				MAD_mainland_invasion
+				MAD_royal_navy
+			}
+		}
+		"UGA" = {
+			history = "UGA_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+
+			}
+			focuses = {
+				UGA_stir_rhetoric
+				UGA_open_camps
+				UGA_god_emperor
+			}
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

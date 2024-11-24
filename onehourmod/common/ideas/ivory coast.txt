@@ -88,8 +88,8 @@ ideas = {
 				naval_detection = 0.15
 			}
 		}
-		IVO_Tenacious_Pirates = {
-			name = IVO_Tenacious_Pirates
+		Tenacious_Pirates = {
+			name = Tenacious_Pirates
 			removal_cost = -1
 			picture = generic_infantry_bonus
 			allowed = {
